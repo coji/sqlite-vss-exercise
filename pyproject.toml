@@ -1,0 +1,27 @@
+[project]
+name = "sqlite-vss-exercise"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "coji", email = "coji@techtalk.jp" }
+]
+dependencies = [
+    "sqlite-vss>=0.1.2",
+    "sentence-transformers>=2.2.2",
+    "fugashi[unidic-lite]>=1.3.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.7.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
